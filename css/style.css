@@ -7,6 +7,7 @@
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #DEEBFF;
+
 }
 
 .fa-solid {
@@ -100,6 +101,7 @@ ul {
 
 li {
     display:inline-flex;
+    padding-top: 16px;
     list-style-type: none;
     height: 60%;
 
@@ -115,8 +117,20 @@ li:hover {
 
 /* Form and filter */
 
+.no_margin {
+    margin: 0px;
+}
+
+.form_filter {
+display: grid;
+gap: 35px;
+}
+
 #title_h1 {
     font-size: 22px;
+    margin: 0px;
+    margin-top: 30px;
+    margin-bottom: 8px;
 }
 
 button {
@@ -147,6 +161,7 @@ form {
     gap: 15px;
 }
 
+
 .text_filter {
     font-size: 17px;
     font-weight: bold;
@@ -164,6 +179,10 @@ form {
     border: 2px solid #D9D9D9;
     
     
+}
+
+.details_filter:hover{
+    background-color: var(--filter-bg-color);
 }
 
 .info {
@@ -195,25 +214,25 @@ form {
     width: 32%;
 }
 
-.populaires-title {
+.populaires_title {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.populaires-cards .card {
+.populaires_cards .card {
     display: flex;
     margin-top: 33px;
 }
 
-.populaires-cards img {
+.populaires_cards img {
     width: 33%;
     height: 136px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
 
-.populaires-cards .card-content {
+.populaires_cards .card_content {
     width: 67%;
     padding-left: 15px;
     display: flex;
@@ -222,16 +241,16 @@ form {
     box-sizing: border-box;
 }
 
-.populaires-cards .card-title {
+.populaires_cards .card_title {
     margin-top: 10px;
     margin-bottom: 4px;
 }
 
-.populaires-cards .card-subtitle {
+.populaires_cards .card_subtitle {
     margin: 0;
 }
 
-.populaires-cards .card-rating {
+.populaires_cards .card_rating {
     margin-bottom: 5px;
 }
 
