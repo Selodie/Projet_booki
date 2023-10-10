@@ -25,7 +25,7 @@ body {
 }
 
 
-.main-container {
+.main_container {
     width: 100%;
     max-width: 1440px;
     padding: 0 50px;
@@ -37,7 +37,7 @@ a {
     text-decoration: none;
 }
 
-.section-title {
+.section_title {
     margin: 0;
     font-size: 22px;
 }
@@ -53,7 +53,7 @@ a {
     object-fit: cover;
 }
 
-.card-title {
+.card_title {
     font-size: 16px;
 }
 
@@ -61,7 +61,7 @@ a {
     font-weight: 700;
 }
 
-.neutral-star {
+.neutral_star {
     color: var(--main-bg-color)
 }
 
@@ -188,25 +188,82 @@ form {
 .info {
     display: flex;
     gap: 10px;
+    margin-bottom: 25px;
 
 }
 
 /****** Hebergements And Populaires ***********/
-.hebergements-and-populaires {
+.hebergements_and_populaires {
     display: flex;
     justify-content: space-between;
 }
 
-.hebergements-and-populaires section {
+.hebergements_and_populaires section {
     background-color: var(--main-bg-color);
     border-radius: 20px;
     padding: 30px;
     box-sizing: border-box;
 }
 
+.card_subtitle {
+    font-size: 14px;
+}
+
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
+}
+
+.hebergements_title {
+    display: flex;
+}
+
+.hebergements .hebergements_cards  {
+    margin-top: 30px;
+    display: grid;
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 30px 30px; 
+    grid-template-areas: 
+      ". . ."
+      ". . ."; 
+}
+
+.hebergements_cards .card_subtitle {
+    margin: 0px;
+}
+
+.hebergements_cards .card_txt {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    gap: 8px;
+    padding-left: 15px;
+    padding-right : 15px;
+}
+
+.hebergements_cards img {
+    width: 100%;
+    height: 120px;
+    border-radius: 20px 20px 0px 0px;
+    
+}
+
+.hebergements_cards .card_content {
+    display: flex;
+    gap: 12px;
+
+}
+
+.hebergements_cards .card_title {
+    margin: 0px;
+    margin-bottom: 4px;
+}
+
+.title_h4 {
+    font-size: 18px;
+    margin: 0px;
 }
 
 /****** Populaires ***********/
@@ -254,9 +311,23 @@ form {
     margin-bottom: 5px;
 }
 
+/* Activities */
 
+.activities {
+    background-color: none;
+    margin-top: 30px;
+}
 
+.article_card {
+    display: flex;
+   
 
+}
+
+.article_cards img {
+    width: 100%;
+    border-radius: 20px;
+}
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
