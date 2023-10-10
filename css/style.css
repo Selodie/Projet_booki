@@ -237,8 +237,9 @@ form {
 .hebergements_cards .card_txt {
     display: flex;
     flex-direction: column;
-    margin-bottom: 15px;
-    gap: 8px;
+    margin-top: 4px;
+    margin-bottom: 3px;
+    gap: 6px;
     padding-left: 15px;
     padding-right : 15px;
 }
@@ -258,7 +259,6 @@ form {
 
 .hebergements_cards .card_title {
     margin: 0px;
-    margin-bottom: 4px;
 }
 
 .title_h4 {
@@ -314,20 +314,43 @@ form {
 /* Activities */
 
 .activities {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.activities_flex {
+    flex: 1;
+}
+
+/* .activities_cards .card {
+    width: 300px;
+} */
+
+.activities {
+    padding: 26px 31px;
+}
+
+
+.activities_cards {
     background-color: none;
     margin-top: 30px;
-}
-
-.article_card {
     display: flex;
-   
-
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
 }
 
-.article_cards img {
+.activities_cards img {
     width: 100%;
-    border-radius: 20px;
+    height: 380px;
+    border-radius: 20px 20px 0px 0px;
+
 }
+
+.activities_cards .card_txt {
+    padding-left: 12px;
+}
+
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
