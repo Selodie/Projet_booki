@@ -18,6 +18,7 @@ body {
     display: flex;
     justify-content: center;
     margin: 0px;
+    padding-bottom: 60px;
     /* background-position: 50% 0;
     background-image: url(images/Desktop.png);
     opacity: 50%;
@@ -350,6 +351,33 @@ form {
 .activities_cards .card_txt {
     padding-left: 12px;
 }
+
+/* Footer */
+
+/* .footer {
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+} */
+
+.footer {
+    background-color: var(--main-bg-color);
+    padding: 29px 0px 30px 22px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+}
+
+
+.footer_items {
+    display: flex;
+    flex-direction: column;
+    
+    gap: 14px;
+}
+
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
