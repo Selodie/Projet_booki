@@ -149,6 +149,7 @@ button {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
+
 form {
     display: flex;
 }
@@ -238,6 +239,7 @@ form {
 
 .hebergements .hebergements_cards {
     margin-top: 30px;
+    margin-bottom: 30px;
     display: grid;
     grid-auto-columns: 1fr;
     grid-template-columns: 1fr 1fr 1fr;
@@ -279,7 +281,8 @@ form {
 
 .title_h4 {
     font-size: 18px;
-    margin: 0px;
+    margin-top: 0;
+    margin-bottom: 0px;
 }
 
 /****** Populaires ***********/
@@ -572,6 +575,7 @@ form {
     .hebergements .hebergements_cards {
         grid-template-columns: repeat(1, 1fr);
         margin-top: 15px;
+        margin-bottom: 15px;
         gap: 15px;
     }
 
@@ -586,6 +590,10 @@ form {
     .hebergements_and_populaires section {
         border-radius: 0px;
         padding: 20px;
+    }
+
+    .title_h4{
+        margin-top: 15px;
     }
 
     .populaires {
